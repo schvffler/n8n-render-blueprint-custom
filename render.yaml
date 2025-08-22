@@ -1,6 +1,6 @@
 services:
   - type: web
-    plan: free
+    plan: starter
     runtime: image
     name: n8n-service
     region: frankfurt
@@ -38,7 +38,6 @@ services:
 
 databases:
   - name: n8n-db
-    plan: free
+    plan: basic-256mb
     region: frankfurt
-    # Use the newest supported major unless you have a reason for 16
     postgresMajorVersion: "17"
